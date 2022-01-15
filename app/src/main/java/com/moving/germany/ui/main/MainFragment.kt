@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.moving.germany.BuildConfig
 import com.moving.germany.R
 
 class MainFragment : Fragment() {
@@ -25,7 +27,9 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+        val apiKey: String = BuildConfig.apiKey
+        Toast.makeText(requireContext(), apiKey, Toast.LENGTH_LONG).show()
         // TODO: Use the ViewModel
     }
 

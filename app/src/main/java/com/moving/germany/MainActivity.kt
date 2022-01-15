@@ -21,10 +21,6 @@ class MainActivity : AppCompatActivity() {
             ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close)
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
-
-        // to make the Navigation drawer icon always appear on the action bar
-
-        // to make the Navigation drawer icon always appear on the action bar
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         if (savedInstanceState == null) {
