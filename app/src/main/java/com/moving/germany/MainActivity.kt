@@ -3,16 +3,9 @@ package com.moving.germany
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
-import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import com.moving.germany.ui.main.MainFragment
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.annotation.NonNull
-import com.mikepenz.materialdrawer.model.DividerDrawerItem
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem
-import com.mikepenz.materialdrawer.model.interfaces.nameRes
 
 
 class MainActivity : AppCompatActivity() {
