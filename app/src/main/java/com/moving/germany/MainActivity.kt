@@ -16,12 +16,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-        drawerLayout = findViewById(R.id.my_drawer_layout)
-        actionBarDrawerToggle =
-            ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close)
-        drawerLayout.addDrawerListener(actionBarDrawerToggle)
-        actionBarDrawerToggle.syncState()
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+//        drawerLayout = findViewById(R.id.my_drawer_layout)
+//        actionBarDrawerToggle =
+//            ActionBarDrawerToggle(this, drawerLayout, R.string.nav_open, R.string.nav_close)
+//        drawerLayout.addDrawerListener(actionBarDrawerToggle)
+//        actionBarDrawerToggle.syncState()
+//        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
@@ -30,9 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
-            true
-        } else super.onOptionsItemSelected(item)
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        return if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
+//            true
+//        } else super.onOptionsItemSelected(item)
+//    }
 }
