@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data />
 
@@ -11,15 +11,46 @@
         android:layout_height="match_parent"
         tools:context=".ui.main.MainFragment">
 
-
-        <Button
-            android:id="@+id/button_speak"
+        <ImageView
+            android:id="@+id/app_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Launch"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/ic_launcher"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/translate_to_german"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/translate_english_to_german"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_icon" />
+
+
+        <Button
+            android:id="@+id/translate_to_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/translate_german_to_english"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/translate_to_german" />
+
+        <Button
+            android:id="@+id/know_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/know_more_about_your_city"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/translate_to_english" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
