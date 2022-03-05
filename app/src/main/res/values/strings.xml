@@ -13,4 +13,8 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="enter_text_to_translate">Enter Text to Translate</string>
+    <string name="app_icon">App Icon</string>
+    <string name="translate_english_to_german">Translate English to German</string>
+    <string name="translate_german_to_english">Translate German to English</string>
+    <string name="know_more_about_your_city">Know More About Your City</string>
 </resources>
