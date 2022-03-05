@@ -34,7 +34,7 @@ class MainFragment : BaseFragment<MainFragmentBinding>() {
     }
 
     private fun initClickListeners() {
-        binding.buttonSpeak.setOnClickListener {
+        binding.translateToGerman.setOnClickListener {
             val intent = Intent(context, TranslateToGermanActivity::class.java)
             startActivity(intent)
         }
