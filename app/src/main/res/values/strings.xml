@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovingToGermany</string>
+    <string name="app_name">Moving To Germany</string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -17,4 +17,10 @@
     <string name="translate_english_to_german">Translate English to German</string>
     <string name="translate_german_to_english">Translate German to English</string>
     <string name="know_more_about_your_city">Know More About Your City</string>
+    <string name="about_us">About Us</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="version">Version</string>
+    <string name="contributors">Contributors</string>
+    <string name="made_with_in">Made with ❤ in 🇮🇳</string>
 </resources>
