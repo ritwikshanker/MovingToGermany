@@ -17,14 +17,14 @@ class TranslateToGermanFragment : BaseFragment<TranslateToGermanFragmentBinding>
     }
 
     private var tts: TextToSpeech? = null
-    private lateinit var viewModel: MainViewModel
+    private lateinit var viewModel: TranslateViewModel
 
     override fun layoutResourceId(): Int = R.layout.translate_to_german_fragment
 
     override fun initViewCreated() {
         initTTS()
         initClickListeners()
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+        viewModel = ViewModelProvider(this)[TranslateViewModel::class.java]
         val apiKey: String = BuildConfig.apiKey
     }
 
